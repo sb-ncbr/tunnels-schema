@@ -1,0 +1,1172 @@
+data_sb_ncbr_partial_charges.dic
+    _dictionary.title            'SB‑NCBR tunnels extension'
+    _dictionary.version          '1.0'
+    _dictionary.ddl_conformance  2.1
+
+save_sb_ncbr_channel_annotation
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_annotation
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_annotation.id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_annotation.id'
+    _item.category_id               sb_ncbr_channel_annotation
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_annotation.channel_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_annotation.channel_id'
+    _item.category_id               sb_ncbr_channel_annotation
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_annotation.name
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_annotation.name'
+    _item.category_id               sb_ncbr_channel_annotation
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_annotation.description
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_annotation.description'
+    _item.category_id               sb_ncbr_channel_annotation
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_annotation.reference
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_annotation.reference'
+    _item.category_id               sb_ncbr_channel_annotation
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_annotation.reference_type
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_annotation.reference_type'
+    _item.category_id               sb_ncbr_channel_annotation
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel.id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel.id'
+    _item.category_id               sb_ncbr_channel
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel.type
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel.type'
+    _item.category_id               sb_ncbr_channel
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel.method
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel.method'
+    _item.category_id               sb_ncbr_channel
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel.software
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel.software'
+    _item.category_id               sb_ncbr_channel
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel.auto
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel.auto'
+    _item.category_id               sb_ncbr_channel
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel.cavity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel.cavity'
+    _item.category_id               sb_ncbr_channel
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_profile
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_profile
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_profile.id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.id'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.channel_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.channel_id'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.radius
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.radius'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.free_radius
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.free_radius'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.distance
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.distance'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.T
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.T'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.x
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.x'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.y
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.y'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.z
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.z'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_profile.charge
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_profile.charge'
+    _item.category_id               sb_ncbr_channel_profile
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_props
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_props
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_props.channel_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.channel_id'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.charge
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.charge'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.hydropathy
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.hydropathy'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.hydrophobicity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.hydrophobicity'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.mutability
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.mutability'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.numNegatives
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.numNegatives'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.numPositives
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.numPositives'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.polarity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.polarity'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.logD
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.logD'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.logP
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.logP'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.logS
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.logS'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.ionizable
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.ionizable'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_props.bRadius
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_props.bRadius'
+    _item.category_id               sb_ncbr_channel_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_layer
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_layer
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_layer.id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.id'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.channel_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.channel_id'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.order
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.order'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.min_radius
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.min_radius'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.min_free_radius
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.min_free_radius'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.start_distance
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.start_distance'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.end_distance
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.end_distance'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.local_minimum
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.local_minimum'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.bottleneck
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.bottleneck'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.charge
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.charge'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.numPositives
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.numPositives'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.numNegatives
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.numNegatives'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.hydrophobicity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.hydrophobicity'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.hydropathy
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.hydropathy'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.polarity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.polarity'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer.mutability
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer.mutability'
+    _item.category_id               sb_ncbr_channel_layer
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_layer_props
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_layer_props
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_layer_props.channel_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.channel_id'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.hydropathy
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.hydropathy'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.hydrophobicity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.hydrophobicity'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.mutability
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.mutability'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.polarity
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.polarity'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.logD
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.logD'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.logP
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.logP'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_props.logS
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_props.logS'
+    _item.category_id               sb_ncbr_channel_layer_props
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_residue
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_residue
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_residue.id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_residue.id'
+    _item.category_id               sb_ncbr_channel_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_residue.name
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_residue.name'
+    _item.category_id               sb_ncbr_channel_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_residue.sequence_number
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_residue.sequence_number'
+    _item.category_id               sb_ncbr_channel_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_residue.chain_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_residue.chain_id'
+    _item.category_id               sb_ncbr_channel_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_layer_residue
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_layer_residue
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_layer_residue.layer_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_residue.layer_id'
+    _item.category_id               sb_ncbr_channel_layer_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_residue.residue_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_residue.residue_id'
+    _item.category_id               sb_ncbr_channel_layer_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_residue.flow
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_residue.flow'
+    _item.category_id               sb_ncbr_channel_layer_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_layer_residue.backbone
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_layer_residue.backbone'
+    _item.category_id               sb_ncbr_channel_layer_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save_sb_ncbr_channel_het_residue
+    _category.description
+;    ?
+;
+    _category.id                sb_ncbr_channel_het_residue
+    _category.mandatory_code    no
+save_
+
+save__sb_ncbr_channel_het_residue.id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_het_residue.id'
+    _item.category_id               sb_ncbr_channel_het_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_het_residue.channel_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_het_residue.channel_id'
+    _item.category_id               sb_ncbr_channel_het_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_het_residue.name
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_het_residue.name'
+    _item.category_id               sb_ncbr_channel_het_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_het_residue.sequence_number
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_het_residue.sequence_number'
+    _item.category_id               sb_ncbr_channel_het_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_het_residue.chain_id
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_het_residue.chain_id'
+    _item.category_id               sb_ncbr_channel_het_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
+save__sb_ncbr_channel_het_residue.bottleneck
+    _item_description.description
+; ?
+;
+    _item.name                      '_sb_ncbr_channel_het_residue.bottleneck'
+    _item.category_id               sb_ncbr_channel_het_residue
+    _item.mandatory_code            yes
+    _item_type.code                 ?
+    _item_units.code                ?
+
+    _item_examples.case
+; ?
+;
+save_
+
