@@ -5,7 +5,9 @@ data_sb_ncbr_partial_charges.dic
 
 save_sb_ncbr_channel_annotation
     _category.description
-;    ?
+;    Data items in the SB_NCBR_CHANNEL_ANNOTATION category record details about the annotation of the channels from ChannelsDB. 
+     The SB_NCBR_CHANNEL_ANNOTATION records define the criteria used to identify these channels.
+
 ;
     _category.id                sb_ncbr_channel_annotation
     _category.mandatory_code    no
@@ -13,13 +15,12 @@ save_
 
 save__sb_ncbr_channel_annotation.id
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_annotation.id must uniquely identify a record in the SB_NCBR_CHANNEL_ANNOTATION category.
 ;
     _item.name                      '_sb_ncbr_channel_annotation.id'
     _item.category_id               sb_ncbr_channel_annotation
     _item.mandatory_code            yes
-    _item_type.code                 ?
-    _item_units.code                ?
+    _item_type.code                 code
 
     _item_examples.case
 ; ?
@@ -28,13 +29,12 @@ save_
 
 save__sb_ncbr_channel_annotation.channel_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_annotation.channel_id must uniquely identify the channel or pore.
 ;
     _item.name                      '_sb_ncbr_channel_annotation.channel_id'
     _item.category_id               sb_ncbr_channel_annotation
     _item.mandatory_code            yes
-    _item_type.code                 ?
-    _item_units.code                ?
+    _item_type.code                 code
 
     _item_examples.case
 ; ?
@@ -43,13 +43,12 @@ save_
 
 save__sb_ncbr_channel_annotation.name
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_annotation.name provides a unique name assigned to the channel or pore.
 ;
     _item.name                      '_sb_ncbr_channel_annotation.name'
     _item.category_id               sb_ncbr_channel_annotation
     _item.mandatory_code            yes
-    _item_type.code                 ?
-    _item_units.code                ?
+    _item_type.code                 string
 
     _item_examples.case
 ; ?
@@ -58,12 +57,12 @@ save_
 
 save__sb_ncbr_channel_annotation.description
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_annotation.description describes the structure of the molecule or tunnel. It may contain information about its properties, location and function.
 ;
     _item.name                      '_sb_ncbr_channel_annotation.description'
     _item.category_id               sb_ncbr_channel_annotation
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 text
     _item_units.code                ?
 
     _item_examples.case
@@ -73,12 +72,12 @@ save_
 
 save__sb_ncbr_channel_annotation.reference
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_annotation.reference defines the identifier used to uniquely specify bibliographic entry.
 ;
     _item.name                      '_sb_ncbr_channel_annotation.reference'
     _item.category_id               sb_ncbr_channel_annotation
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -88,12 +87,12 @@ save_
 
 save__sb_ncbr_channel_annotation.reference_type
     _item_description.description
-; ?
+;   Item _channel_annotation.reference_type defines the type of identifier used to uniquely specify bibliographic entry. For example 'DOI'.
 ;
     _item.name                      '_sb_ncbr_channel_annotation.reference_type'
     _item.category_id               sb_ncbr_channel_annotation
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -103,7 +102,7 @@ save_
 
 save_sb_ncbr_channel
     _category.description
-;    ?
+;    Data items in the SB_NCBR_CHANNEL category record details about the method used to calculate the channels and pores. 
 ;
     _category.id                sb_ncbr_channel
     _category.mandatory_code    no
@@ -111,12 +110,12 @@ save_
 
 save__sb_ncbr_channel.id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel.id must uniquely identify a record in the SB_NCBR_CHANNEL category.
 ;
     _item.name                      '_sb_ncbr_channel.id'
     _item.category_id               sb_ncbr_channel
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -126,12 +125,12 @@ save_
 
 save__sb_ncbr_channel.type
     _item_description.description
-; ?
+;   Provides information about the type of the channel. The options are Pore, Path, ets
 ;
     _item.name                      '_sb_ncbr_channel.type'
     _item.category_id               sb_ncbr_channel
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 string
     _item_units.code                ?
 
     _item_examples.case
@@ -141,12 +140,12 @@ save_
 
 save__sb_ncbr_channel.method
     _item_description.description
-; ?
+;   Provides name of the method used for tunnel calculations. The options are CSATunnel, Moleonline etc
 ;
     _item.name                      '_sb_ncbr_channel.method'
     _item.category_id               sb_ncbr_channel
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 string
     _item_units.code                ?
 
     _item_examples.case
@@ -156,27 +155,27 @@ save_
 
 save__sb_ncbr_channel.software
     _item_description.description
-; ?
+;   Provides name of the used software for tunnel calculations. The options are MOLE, Caver.
 ;
     _item.name                      '_sb_ncbr_channel.software'
     _item.category_id               sb_ncbr_channel
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 string
     _item_units.code                ?
 
     _item_examples.case
-; ?
+; MOLE
 ;
 save_
 
 save__sb_ncbr_channel.auto
     _item_description.description
-; ?
+;   The item indicates whether the starting point for channel calculation was chosen automatically. 
 ;
     _item.name                      '_sb_ncbr_channel.auto'
     _item.category_id               sb_ncbr_channel
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 boolean
     _item_units.code                ?
 
     _item_examples.case
@@ -186,12 +185,12 @@ save_
 
 save__sb_ncbr_channel.cavity
     _item_description.description
-; ?
+;   The value of the item _sb_ncbr_channel.cavity provides information about the number of cavities occurring in the structure.
 ;
     _item.name                      '_sb_ncbr_channel.cavity'
     _item.category_id               sb_ncbr_channel
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -201,7 +200,7 @@ save_
 
 save_sb_ncbr_channel_profile
     _category.description
-;    ?
+;    Data items in the SB_NCBR_CHANNEL_PROFILE category record details about the calculated channels and pores. 
 ;
     _category.id                sb_ncbr_channel_profile
     _category.mandatory_code    no
@@ -209,12 +208,12 @@ save_
 
 save__sb_ncbr_channel_profile.id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_profile.id must uniquely identify a record in the SB_NCBR_CHANNEL_PROFILE category.
 ;
     _item.name                      '_sb_ncbr_channel_profile.id'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -224,28 +223,29 @@ save_
 
 save__sb_ncbr_channel_profile.channel_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_profile.channel_id must uniquely identify the channel.
 ;
     _item.name                      '_sb_ncbr_channel_profile.channel_id'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
-; ?
+; Vxvv0tDGkebo8zXjbbPUQ-channelsDb-1
 ;
 save_
 
 save__sb_ncbr_channel_profile.radius
     _item_description.description
-; ?
+;   The radius of a sphere within the channel limited by the three closest atoms.
 ;
     _item.name                      '_sb_ncbr_channel_profile.radius'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
+    _item_range.minimum             0
 
     _item_examples.case
 ; ?
@@ -254,13 +254,14 @@ save_
 
 save__sb_ncbr_channel_profile.free_radius
     _item_description.description
-; ?
+;   The radius of a sphere within the channel is limited by the three closest main chain atoms to allow sidechain flexibility.
 ;
     _item.name                      '_sb_ncbr_channel_profile.free_radius'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
+    _item_range.minimum             0
 
     _item_examples.case
 ; ?
@@ -276,6 +277,8 @@ save__sb_ncbr_channel_profile.distance
     _item.mandatory_code            yes
     _item_type.code                 ?
     _item_units.code                ?
+    _item_range.maximum             1
+    _item_range.minimum             0
 
     _item_examples.case
 ; ?
@@ -299,12 +302,12 @@ save_
 
 save__sb_ncbr_channel_profile.x
     _item_description.description
-; ?
+;   The item _sb_ncbr_channel_profile.x represents the position of x point in the Cartesian coordinate system.
 ;
     _item.name                      '_sb_ncbr_channel_profile.x'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -314,12 +317,12 @@ save_
 
 save__sb_ncbr_channel_profile.y
     _item_description.description
-; ?
+;   The item _sb_ncbr_channel_profile.y represents the position of y point in the Cartesian coordinate system.
 ;
     _item.name                      '_sb_ncbr_channel_profile.y'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -329,12 +332,12 @@ save_
 
 save__sb_ncbr_channel_profile.z
     _item_description.description
-; ?
+;   The item _sb_ncbr_channel_profile.z represents the position of z point in the Cartesian coordinate system.
 ;
     _item.name                      '_sb_ncbr_channel_profile.z'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -344,12 +347,12 @@ save_
 
 save__sb_ncbr_channel_profile.charge
     _item_description.description
-; ?
+;   Charge is calculated as a sum of charged amino acid residues (ARG, LYS, HIS = +1; ASP, GLU = -1)
 ;
     _item.name                      '_sb_ncbr_channel_profile.charge'
     _item.category_id               sb_ncbr_channel_profile
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -359,7 +362,7 @@ save_
 
 save_sb_ncbr_channel_props
     _category.description
-;    ?
+;   Data items in the SB_NCBR_CHANNEL_PROPS category record information about properties in calculated channels and pores. 
 ;
     _category.id                sb_ncbr_channel_props
     _category.mandatory_code    no
@@ -367,12 +370,12 @@ save_
 
 save__sb_ncbr_channel_props.channel_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_props.channel_id must uniquely identify the channel.
 ;
     _item.name                      '_sb_ncbr_channel_props.channel_id'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -382,12 +385,12 @@ save_
 
 save__sb_ncbr_channel_props.charge
     _item_description.description
-; ?
+;   Charge is calculated as a sum of charged amino acid residues. Example ARG, LYS, HIS = +1; ASP, GLU = -1
 ;
     _item.name                      '_sb_ncbr_channel_props.charge'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -397,12 +400,12 @@ save_
 
 save__sb_ncbr_channel_props.hydropathy
     _item_description.description
-; ?
+;   The hydropathy index is connected to hydrophilicity/hydrophobicity of amino acids. The most hydrophilic is ARG = -4.5; most hydrophobic ILE = 4.5.
 ;
     _item.name                      '_sb_ncbr_channel_props.hydropathy'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -412,12 +415,12 @@ save_
 
 save__sb_ncbr_channel_props.hydrophobicity
     _item_description.description
-; ?
+;   Hydrophobicity is calculated as an average of normalised hydrophobicity scales. According to the hydrophobicity value, the most hydrophilic amino acid is GLU (-1.140), and ILE (1.810) is the most hydrophobic.
 ;
     _item.name                      '_sb_ncbr_channel_props.hydrophobicity'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -427,12 +430,12 @@ save_
 
 save__sb_ncbr_channel_props.mutability
     _item_description.description
-; ?
+;   Mutability is calculated as an average of the relative mutability index. Relative mutability is based on empirical substitution matrices between similar protein sequences.
 ;
     _item.name                      '_sb_ncbr_channel_props.mutability'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -472,12 +475,12 @@ save_
 
 save__sb_ncbr_channel_props.polarity
     _item_description.description
-; ?
+;   Polarity is calculated as an average of amino acid polarities assigned according to the method of Zimmerman et al. Polarity ranges from completely nonpolar amino acids (ALA, GLY = 0.00) through polar residues (e.g. SER = 1.67) towards charged residues (GLU = 49.90, ARG = 52.00).
 ;
     _item.name                      '_sb_ncbr_channel_props.polarity'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -487,12 +490,12 @@ save_
 
 save__sb_ncbr_channel_props.logD
     _item_description.description
-; ?
+;   Lipophilicity (logD-scale) is calculated as octanol/water distribution coefficients of Cβ side-chain fragments and mainchain (-0.86) at pH 7.4 via www.chemicalize.org. The distribution coefficient takes into account the ionisation of compounds.
 ;
     _item.name                      '_sb_ncbr_channel_props.logD'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -502,12 +505,12 @@ save_
 
 save__sb_ncbr_channel_props.logP
     _item_description.description
-; ?
+;   Lipophilicity (logP-scale) is calculated as octanol/water partition coefficients of Cβ fragments of side-chains and mainchain (-0.86) via www.chemicalize.org. 
 ;
     _item.name                      '_sb_ncbr_channel_props.logP'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -517,12 +520,12 @@ save_
 
 save__sb_ncbr_channel_props.logS
     _item_description.description
-; ?
+;   Solubility (logS-scale) is calculated as water solubility of Cβ side-chain fragments and mainchain (0.81) at pH 7.4 via www.chemicalize.org. Our estimated logS value is a unit stripped logarithm (base 10) of the solubility measured in mol/litre. It measures how well individual residues can interact with water molecules.
 ;
     _item.name                      '_sb_ncbr_channel_props.logS'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -532,12 +535,12 @@ save_
 
 save__sb_ncbr_channel_props.ionizable
     _item_description.description
-; ?
+;   Ionisable residues can also be viewed in the channel profile or directly as the selection on the visualised structure. Ionizable means that the substance can go into an ionic state, i.e. split into positively or negatively charged particles.
 ;
     _item.name                      '_sb_ncbr_channel_props.ionizable'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -547,7 +550,7 @@ save_
 
 save__sb_ncbr_channel_props.bRadius
     _item_description.description
-; ?
+;   Item represent Radius + RMSF calculated from B-factors of residues within individual layers
 ;
     _item.name                      '_sb_ncbr_channel_props.bRadius'
     _item.category_id               sb_ncbr_channel_props
@@ -562,7 +565,7 @@ save_
 
 save_sb_ncbr_channel_layer
     _category.description
-;    ?
+;    Data items in the SB_NCBR_CHANNEL_LAYER category record information about properties of individual layer of calculated channels and pores. 
 ;
     _category.id                sb_ncbr_channel_layer
     _category.mandatory_code    no
@@ -570,12 +573,12 @@ save_
 
 save__sb_ncbr_channel_layer.id
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_layer.id must uniquely identify the layer in channel.
 ;
     _item.name                      '_sb_ncbr_channel_layer.id'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -585,12 +588,12 @@ save_
 
 save__sb_ncbr_channel_layer.channel_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_layer.channel_id must uniquely identify the channel.
 ;
     _item.name                      '_sb_ncbr_channel_layer.channel_id'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -600,12 +603,12 @@ save_
 
 save__sb_ncbr_channel_layer.order
     _item_description.description
-; ?
+;   Order of the layer in specified channel.
 ;
     _item.name                      '_sb_ncbr_channel_layer.order'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -615,12 +618,12 @@ save_
 
 save__sb_ncbr_channel_layer.min_radius
     _item_description.description
-; ?
+;   The minimal radius of a layer within the channel limited by the three closest atoms.
 ;
     _item.name                      '_sb_ncbr_channel_layer.min_radius'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -630,27 +633,24 @@ save_
 
 save__sb_ncbr_channel_layer.min_free_radius
     _item_description.description
-; ?
+;   The minimal radius of a layer within the channel is limited by the three closest main chain atoms to allow sidechain flexibility
 ;
     _item.name                      '_sb_ncbr_channel_layer.min_free_radius'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
-    _item_examples.case
-; ?
-;
 save_
 
 save__sb_ncbr_channel_layer.start_distance
     _item_description.description
-; ?
+;   Specifies the start point of the layer in the tunnel.
 ;
     _item.name                      '_sb_ncbr_channel_layer.start_distance'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -660,12 +660,12 @@ save_
 
 save__sb_ncbr_channel_layer.end_distance
     _item_description.description
-; ?
+;   Specifies the end point of the layer in the tunnel
 ;
     _item.name                      '_sb_ncbr_channel_layer.end_distance'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -675,12 +675,12 @@ save_
 
 save__sb_ncbr_channel_layer.local_minimum
     _item_description.description
-; ?
+;   Determines whether layer is in local minimum.
 ;
     _item.name                      '_sb_ncbr_channel_layer.local_minimum'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 boolean
     _item_units.code                ?
 
     _item_examples.case
@@ -690,12 +690,12 @@ save_
 
 save__sb_ncbr_channel_layer.bottleneck
     _item_description.description
-; ?
+;   Item refers to the narrowest part of a channel within a protein structure.
 ;
     _item.name                      '_sb_ncbr_channel_layer.bottleneck'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 boolean
     _item_units.code                ?
 
     _item_examples.case
@@ -705,12 +705,12 @@ save_
 
 save__sb_ncbr_channel_layer.charge
     _item_description.description
-; ?
+;   Charge is calculated as a sum of charged amino acid residues in layer (ARG, LYS, HIS = +1; ASP, GLU = -1).
 ;
     _item.name                      '_sb_ncbr_channel_layer.charge'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -750,12 +750,12 @@ save_
 
 save__sb_ncbr_channel_layer.hydrophobicity
     _item_description.description
-; ?
+;   Hydrophobicity is calculated as an average of normalised hydrophobicity scales of layer.
 ;
     _item.name                      '_sb_ncbr_channel_layer.hydrophobicity'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -765,12 +765,12 @@ save_
 
 save__sb_ncbr_channel_layer.hydropathy
     _item_description.description
-; ?
+;   Hydropathy is calculated as an average of the hydropathy index assigned to residues according to the method of Kyte and Doolittle.
 ;
     _item.name                      '_sb_ncbr_channel_layer.hydropathy'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -780,12 +780,12 @@ save_
 
 save__sb_ncbr_channel_layer.polarity
     _item_description.description
-; ?
+;   Polarity is calculated as an average of amino acid polarities of layer assigned according to the method of Zimmerman et al.
 ;
     _item.name                      '_sb_ncbr_channel_layer.polarity'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -795,12 +795,12 @@ save_
 
 save__sb_ncbr_channel_layer.mutability
     _item_description.description
-; ?
+;   Mutability is calculated as an average of the relative mutability index (Jones1992) of each layer. Relative mutability is based on empirical substitution matrices between similar protein sequences.
 ;
     _item.name                      '_sb_ncbr_channel_layer.mutability'
     _item.category_id               sb_ncbr_channel_layer
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -810,7 +810,7 @@ save_
 
 save_sb_ncbr_channel_layer_props
     _category.description
-;    ?
+;   Data items in the SB_NCBR_CHANNEL_LAYER_PROPS category record information about properties of individual layer of calculated channels and pores. 
 ;
     _category.id                sb_ncbr_channel_layer_props
     _category.mandatory_code    no
@@ -818,12 +818,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.channel_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_layer_props.channel_id must uniquely identify the channel.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.channel_id'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -833,12 +833,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.hydropathy
     _item_description.description
-; ?
+;   Hydropathy is calculated as an average of the hydropathy index in layer assigned to residues according to the method of Kyte and Doolittle.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.hydropathy'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -848,12 +848,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.hydrophobicity
     _item_description.description
-; ?
+;   Hydrophobicity is calculated as an average of normalised hydrophobicity scales of layer.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.hydrophobicity'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -863,12 +863,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.mutability
     _item_description.description
-; ?
+;   Mutability is calculated as an average of the relative mutability index (Jones1992) of layer. Relative mutability is based on empirical substitution matrices between similar protein sequences.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.mutability'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -878,12 +878,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.polarity
     _item_description.description
-; ?
+;   Polarity is calculated as an average of amino acid polarities of layer assigned according to the method of Zimmerman et al.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.polarity'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -893,12 +893,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.logD
     _item_description.description
-; ?
+;   Lipophilicity (logD-scale) is calculated as octanol/water distribution coefficients of Cβ side-chain fragments and mainchain (-0.86) at pH 7.4 of layer via www.chemicalize.org. The distribution coefficient takes into account the ionisation of compounds.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.logD'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -908,12 +908,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.logP
     _item_description.description
-; ?
+;   Lipophilicity (logP-scale) is calculated as octanol/water partition coefficients of Cβ fragments of side-chains and mainchain (-0.86) of layer via www.chemicalize.org.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.logP'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -923,12 +923,12 @@ save_
 
 save__sb_ncbr_channel_layer_props.logS
     _item_description.description
-; ?
+;   Solubility (logS-scale) is calculated as water solubility of Cβ side-chain fragments and mainchain (0.81) at pH 7.4 of layer via www.chemicalize.org. Our estimated logS value is a unit stripped logarithm (base 10) of the solubility measured in mol/litre. It measures how well individual residues can interact with water molecules.
 ;
     _item.name                      '_sb_ncbr_channel_layer_props.logS'
     _item.category_id               sb_ncbr_channel_layer_props
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 float
     _item_units.code                ?
 
     _item_examples.case
@@ -938,7 +938,7 @@ save_
 
 save_sb_ncbr_channel_residue
     _category.description
-;    ?
+;    Data items in the SB_NCBR_CHANNEL_RESIDUE category record details about residues in structure.
 ;
     _category.id                sb_ncbr_channel_residue
     _category.mandatory_code    no
@@ -946,12 +946,12 @@ save_
 
 save__sb_ncbr_channel_residue.id
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_residue.id must uniquely identify the residue in channel.
 ;
     _item.name                      '_sb_ncbr_channel_residue.id'
     _item.category_id               sb_ncbr_channel_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -961,12 +961,12 @@ save_
 
 save__sb_ncbr_channel_residue.name
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_residue.name provides a unique name assigned to the residue in structure.
 ;
     _item.name                      '_sb_ncbr_channel_residue.name'
     _item.category_id               sb_ncbr_channel_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -976,12 +976,12 @@ save_
 
 save__sb_ncbr_channel_residue.sequence_number
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_residue.sequence_number provides a unique value assigned to the residue in sequence of the structure.
 ;
     _item.name                      '_sb_ncbr_channel_residue.sequence_number'
     _item.category_id               sb_ncbr_channel_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -991,12 +991,12 @@ save_
 
 save__sb_ncbr_channel_residue.chain_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_residue.chain_id must uniquely identify the chain of the residue in channel.
 ;
     _item.name                      '_sb_ncbr_channel_residue.chain_id'
     _item.category_id               sb_ncbr_channel_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -1006,7 +1006,7 @@ save_
 
 save_sb_ncbr_channel_layer_residue
     _category.description
-;    ?
+;   Data items in the SB_NCBR_CHANNEL_LAYER_RESIDUE category record details about layer of residues in structure.
 ;
     _category.id                sb_ncbr_channel_layer_residue
     _category.mandatory_code    no
@@ -1014,12 +1014,12 @@ save_
 
 save__sb_ncbr_channel_layer_residue.layer_id
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_layer_residue.layer_id must uniquely identify the layer of the residue in channel.
 ;
     _item.name                      '_sb_ncbr_channel_layer_residue.layer_id'
     _item.category_id               sb_ncbr_channel_layer_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -1029,12 +1029,12 @@ save_
 
 save__sb_ncbr_channel_layer_residue.residue_id
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_layer_residue.residue_id must uniquely identify the residue of the layer in channel.
 ;
     _item.name                      '_sb_ncbr_channel_layer_residue.residue_id'
     _item.category_id               sb_ncbr_channel_layer_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -1044,12 +1044,12 @@ save_
 
 save__sb_ncbr_channel_layer_residue.flow
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_layer_residue.flow must uniquely identify the order of the residue in layer.
 ;
     _item.name                      '_sb_ncbr_channel_layer_residue.flow'
     _item.category_id               sb_ncbr_channel_layer_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -1059,12 +1059,12 @@ save_
 
 save__sb_ncbr_channel_layer_residue.backbone
     _item_description.description
-; ?
+;   Specifies whether the layer is in the backbone.
 ;
     _item.name                      '_sb_ncbr_channel_layer_residue.backbone'
     _item.category_id               sb_ncbr_channel_layer_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 boolean
     _item_units.code                ?
 
     _item_examples.case
@@ -1074,7 +1074,7 @@ save_
 
 save_sb_ncbr_channel_het_residue
     _category.description
-;    ?
+;    Data items in the SB_NCBR_CHANNEL_HET_RESIDUE category record details about hetero-residues in structure.
 ;
     _category.id                sb_ncbr_channel_het_residue
     _category.mandatory_code    no
@@ -1082,12 +1082,12 @@ save_
 
 save__sb_ncbr_channel_het_residue.id
     _item_description.description
-; ?
+;   The value of _sb_ncbr_channel_het_residue.id must uniquely identify the hetero-residue in structure.
 ;
     _item.name                      '_sb_ncbr_channel_het_residue.id'
     _item.category_id               sb_ncbr_channel_het_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -1097,12 +1097,12 @@ save_
 
 save__sb_ncbr_channel_het_residue.channel_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_het_residue.channel_id must uniquely identify the channel.
 ;
     _item.name                      '_sb_ncbr_channel_het_residue.channel_id'
     _item.category_id               sb_ncbr_channel_het_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -1112,12 +1112,12 @@ save_
 
 save__sb_ncbr_channel_het_residue.name
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_het_residue.name provides a unique name assigned to the hetero-residue in structure.
 ;
     _item.name                      '_sb_ncbr_channel_het_residue.name'
     _item.category_id               sb_ncbr_channel_het_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -1127,12 +1127,12 @@ save_
 
 save__sb_ncbr_channel_het_residue.sequence_number
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_het_residue.sequence_number provides a unique value assigned to the hetero-residue in sequence of the structure.
 ;
     _item.name                      '_sb_ncbr_channel_het_residue.sequence_number'
     _item.category_id               sb_ncbr_channel_het_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 integer
     _item_units.code                ?
 
     _item_examples.case
@@ -1142,12 +1142,12 @@ save_
 
 save__sb_ncbr_channel_het_residue.chain_id
     _item_description.description
-; ?
+;   Item _sb_ncbr_channel_het_residue.chain_id must uniquely identify the chain in which channel occurs.
 ;
     _item.name                      '_sb_ncbr_channel_het_residue.chain_id'
     _item.category_id               sb_ncbr_channel_het_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 code
     _item_units.code                ?
 
     _item_examples.case
@@ -1157,12 +1157,12 @@ save_
 
 save__sb_ncbr_channel_het_residue.bottleneck
     _item_description.description
-; ?
+;   Item refers if the hetero-residue occurs in the narrowest part of a channel within a protein structure.
 ;
     _item.name                      '_sb_ncbr_channel_het_residue.bottleneck'
     _item.category_id               sb_ncbr_channel_het_residue
     _item.mandatory_code            yes
-    _item_type.code                 ?
+    _item_type.code                 boolean
     _item_units.code                ?
 
     _item_examples.case
