@@ -12,7 +12,7 @@ loop_
 _audit_conform.dict_name
 _audit_conform.dict_version
 _audit_conform.dict_location
-mmcif_tunnels_v10.dic       1.0      https://sb-ncbr.github.io/tunnels-schema/mmcif_tunnels_v10.dic
+mmcif_tunnels_v10.dic       1.0      https://sb-ncbr.github.io/tunnels-schema/schemas/mmcif_tunnels_v10.dic
 ```
 
 # Checking the mmCIF
