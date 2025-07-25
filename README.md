@@ -1,3 +1,9 @@
+# Dictionary overview
+
+![Dictionary overview](https://github.com/sb-ncbr/tunnels-schema/blob/main/images/schema.png)
+
+See the [full version](https://github.com/sb-ncbr/tunnels-schema/blob/main/images/schema_full.png) with the descriptions.
+
 # Updating dictionary
 
 After updating the dictionary, check whether the file is valid:
