@@ -454,7 +454,7 @@ save__sb_ncbr_channel_props.mutability
     _item.name                      '_sb_ncbr_channel_props.mutability'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 integer
+    _item_type.code                 int
     loop_
     _item_range.maximum
     _item_range.minimum
@@ -598,7 +598,7 @@ save__sb_ncbr_channel_props.ionizable
     _item.name                      '_sb_ncbr_channel_props.ionizable'
     _item.category_id               sb_ncbr_channel_props
     _item.mandatory_code            yes
-    _item_type.code                 float
+    _item_type.code                 int
 
     _item_examples.case
 ; 1
