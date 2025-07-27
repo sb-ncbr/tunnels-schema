@@ -1,5 +1,7 @@
 # Dictionary overview
 
+Current version of the schema is available at [https://sb-ncbr.github.io/tunnels-schema/schemas/mmcif_tunnels_v10.dic](https://sb-ncbr.github.io/tunnels-schema/schemas/mmcif_tunnels_v10.dic).
+
 ![Dictionary overview](https://github.com/sb-ncbr/tunnels-schema/blob/main/images/schema.png)
 
 See the [full version](https://github.com/sb-ncbr/tunnels-schema/blob/main/images/schema_full.png) with the descriptions.
