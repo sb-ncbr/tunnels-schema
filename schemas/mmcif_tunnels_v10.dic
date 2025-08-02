@@ -1,6 +1,6 @@
 data_sb_ncbr_tunnels.dic
-    _dictionary.title            'SB-NCBR tunnels extension'
-    _dictionary.version          '1.0'
+    _dictionary.title            mmcif_tunnels.dic
+    _dictionary.version          1.0
     _dictionary.ddl_conformance  2.1
 
 save_sb_ncbr_channel_annotation
